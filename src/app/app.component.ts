@@ -25,7 +25,8 @@ const HEROES: Hero[] = [
         (click)="onSelect(hero)">
         <span class="badge">{{ hero.id }}</span> {{ hero.name }}
       </li>
-    </ul>`
+    </ul>
+    <hero-detail [hero]="selectedHero"></hero-detail>`
     ,
   styles: [
     `
